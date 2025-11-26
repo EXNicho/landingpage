@@ -1,21 +1,36 @@
 import React from 'react';
-import { BeakerIcon, BoltIcon, ChartBarIcon } from '@heroicons/react/24/outline';
+import { GlobeAltIcon, BoltIcon, ShieldCheckIcon, ChartBarIcon, LockClosedIcon, CogIcon } from '@heroicons/react/24/outline';
 
 const features = [
   {
-    name: 'AI-Powered Arbitrage',
-    description: 'Our proprietary AI continuously scans thousands of assets across multiple exchanges to identify and execute profitable arbitrage opportunities in real-time.',
-    icon: BeakerIcon,
+    name: 'Auto-Scan Multi-Exchange',
+    description: 'Memindai peluang arbitrage di berbagai bursa 24/7.',
+    icon: GlobeAltIcon,
   },
   {
-    name: 'Lightning-Fast Execution',
-    description: 'Engineered for speed, our system executes trades in milliseconds, ensuring you never miss an opportunity in the fast-paced crypto market.',
+    name: 'High-Speed Execution',
+    description: 'Eksekusi ultra-cepat untuk menangkap peluang sebelum hilang.',
     icon: BoltIcon,
   },
   {
-    name: 'Advanced Analytics',
-    description: 'Gain a competitive edge with our comprehensive analytics dashboard. Track your performance, analyze market trends, and optimize your trading strategy.',
+    name: 'Risk Control AI',
+    description: 'Sistem otomatis yang menyeimbangkan risiko dan potensi profit.',
+    icon: ShieldCheckIcon,
+  },
+  {
+    name: 'Realtime Dashboard',
+    description: 'Pantau semua transaksi dan profit secara realtime.',
     icon: ChartBarIcon,
+  },
+  {
+    name: 'Secure Encryption',
+    description: 'Perlindungan tingkat tinggi untuk data dan API pengguna.',
+    icon: LockClosedIcon,
+  },
+  {
+    name: 'Zero Manual Work',
+    description: 'Anda hanya mengatur, sistem yang bekerja sepenuhnya otomatis.',
+    icon: CogIcon,
   },
 ];
 
@@ -24,9 +39,9 @@ const Features = () => {
     <section id="features" className="py-24 bg-gray-900/20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-extrabold text-white">Why Choose Quantum?</h2>
+          <h2 className="text-4xl font-extrabold text-white">Premium Features</h2>
           <p className="mt-4 text-lg text-gray-400">
-            Our platform is built on three core principles: intelligence, speed, and transparency.
+            Everything you need for automated, intelligent, and secure trading.
           </p>
         </div>
         <div className="grid md:grid-cols-3 gap-8">

@@ -1,3 +1,4 @@
+"use client";
 import React from 'react';
 
 const testimonials = [
@@ -19,22 +20,38 @@ const testimonials = [
 ];
 
 const Testimonials = () => {
+  const [activeIndex, setActiveIndex] = React.useState(0);
+
+  React.useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
-    <section id="testimonials" className="py-24">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-extrabold text-white">Trusted by Traders Worldwide</h2>
-          <p className="mt-4 text-lg text-gray-400">
-            Don't just take our word for it. Here's what our users have to say.
-          </p>
-        </div>
-        <div className="grid md:grid-cols-3 gap-8">
-          {testimonials.map((testimonial) => (
-            <div key={testimonial.author} className="p-8 rounded-2xl glassmorphism">
-              <p className="text-gray-300 text-lg mb-6">"{testimonial.quote}"</p>
-              <div>
-                <p className="font-bold text-white">{testimonial.author}</p>
-                <p className="text-sm text-gray-400">{testimonial.title}</p>
+    <section id="testimonials" className="relative w-full h-screen flex flex-col items-center justify-center text-center overflow-hidden bg-black">
+      <div className="absolute top-0 left-0 w-full h-full">
+        <div className="absolute w-full h-full bg-gradient-to-b from-blue-900/30 to-transparent animate-pulse" />
+      </div>
+      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className="text-4xl md:text-6xl font-extrabold text-white mb-16">
+          Trusted by Traders Worldwide
+        </h2>
+        <div className="relative h-64">
+          {testimonials.map((testimonial, index) => (
+            <div
+              key={testimonial.author}
+              className={`absolute w-full transition-opacity duration-1000 ${
+                index === activeIndex ? 'opacity-100' : 'opacity-0'
+              }`}
+            >
+              <div className="max-w-3xl mx-auto">
+                <p className="text-2xl text-gray-300 mb-8">"{testimonial.quote}"</p>
+                <div>
+                  <p className="font-bold text-white text-xl">{testimonial.author}</p>
+                  <p className="text-gray-400">{testimonial.title}</p>
+                </div>
               </div>
             </div>
           ))}
