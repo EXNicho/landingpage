@@ -23,13 +23,7 @@ const Hero = () => {
         </p>
         <div className="flex justify-center space-x-4">
           <a
-            href="#"
-            className="inline-block bg-cyan-500 hover:bg-cyan-400 text-white font-bold py-3 px-8 rounded-lg text-lg transition-colors duration-300 glow"
-          >
-            Mulai Sekarang
-          </a>
-          <a
-            href="#HowItWorks"
+            href="#how-it-works"
             className="inline-block bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-8 rounded-lg text-lg transition-colors duration-300"
           >
             Lihat Cara Kerjanya

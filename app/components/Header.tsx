@@ -1,12 +1,27 @@
-import React from 'react';
+"use client";
 
-const Header = () => {
+import React from 'react';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+
+interface HeaderProps {
+  hideGetStartedButton?: boolean;
+}
+
+const Header: React.FC<HeaderProps> = ({ hideGetStartedButton = false }) => {
+  const pathname = usePathname();
+  const isDownloadPage = pathname === '/download';
+
+  const getHref = (hash: string) => {
+    return isDownloadPage ? `/${hash}` : hash;
+  };
+
   return (
     <header className="fixed top-0 left-0 right-0 z-50 glassmorphism">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <div className="flex-shrink-0">
-            <a href="/" className="flex items-center">
+            <Link href="/" className="flex items-center">
               <svg className="h-8 w-auto text-cyan-400" viewBox="0 0 24 24" fill="currentColor">
                 <path
                   fillRule="evenodd"
@@ -15,29 +30,31 @@ const Header = () => {
                 />
               </svg>
               <span className="ml-3 text-2xl font-bold text-white">Quantum</span>
-            </a>
+            </Link>
           </div>
           <nav className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
-              <a href="#features" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+              <Link href={getHref('#features')} className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
                 Features
-              </a>
-              <a href="#testimonials" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+              </Link>
+              <Link href={getHref('#testimonials')} className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
                 Testimonials
-              </a>
-              <a href="#contact" className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+              </Link>
+              <Link href={getHref('#contact')} className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
                 Contact
-              </a>
+              </Link>
             </div>
           </nav>
-          <div className="hidden md:block">
-            <a
-              href="#"
-              className="inline-block bg-cyan-500 hover:bg-cyan-400 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-300"
-            >
-              Get Started
-            </a>
-          </div>
+          {!hideGetStartedButton && (
+            <div className="hidden md:block">
+              <Link
+                href="/download"
+                className="inline-block bg-cyan-500 hover:bg-cyan-400 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-300"
+              >
+                Get Started
+              </Link>
+            </div>
+          )}
         </div>
       </div>
     </header>
