@@ -16,18 +16,10 @@ const DownloadPage = () => {
         <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto mb-12">
           Get started with the most powerful automated arbitrage trading system.
         </p>
-        <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-          <a href="#" className="p-8 rounded-2xl glassmorphism glow flex flex-col items-center justify-center">
+        <div className="grid md:grid-cols-1 gap-8 max-w-4xl mx-auto">
+          <a href="https://github.com/EXNicho/QUANTUM/releases/download/Quantum-Arbitrage/Quantum.Arbitrage.zip" className="p-8 rounded-2xl glassmorphism glow flex flex-col items-center justify-center">
             <ArrowDownTrayIcon className="h-12 w-12 text-cyan-400 mb-4" />
-            <h3 className="text-2xl font-bold text-white">Windows</h3>
-          </a>
-          <a href="#" className="p-8 rounded-2xl glassmorphism glow flex flex-col items-center justify-center">
-            <ArrowDownTrayIcon className="h-12 w-12 text-cyan-400 mb-4" />
-            <h3 className="text-2xl font-bold text-white">macOS</h3>
-          </a>
-          <a href="#" className="p-8 rounded-2xl glassmorphism glow flex flex-col items-center justify-center">
-            <ArrowDownTrayIcon className="h-12 w-12 text-cyan-400 mb-4" />
-            <h3 className="text-2xl font-bold text-white">Linux</h3>
+            <h3 className="text-2xl font-bold text-white">Windows x64 Executable</h3>
           </a>
         </div>
       </div>

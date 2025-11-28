@@ -2,7 +2,6 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import Features from './components/Features';
 import DashboardPreview from './components/DashboardPreview';
-import Security from './components/Security';
 import HowItWorks from './components/HowItWorks';
 import DemoVideo from './components/DemoVideo';
 import Testimonials from './components/Testimonials';
@@ -15,7 +14,6 @@ export default function Home() {
       <Hero />
       <Features />
       <DashboardPreview />
-      <Security />
       <HowItWorks />
       <DemoVideo />
       <Testimonials />
