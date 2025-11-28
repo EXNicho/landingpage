@@ -11,34 +11,34 @@ import {
 const features = [
   {
     name: "Auto-Scan",
-    description: "Memindai peluang arbitrage di bursa 24/7.",
+    description: "Scans for arbitrage opportunities on exchanges 24/7.",
     icon: GlobeAltIcon,
   },
   {
     name: "Analytic & Insights",
-    description: "Real Time performance analytics dan laporan mendalam.",
+    description: "Real-time performance analytics and in-depth reports.",
     icon: BoltIcon,
   },
   {
     name: "Risk Control ",
     description:
-      "Sistem otomatis yang menyeimbangkan risiko dan potensi profit.",
+      "An automated system that balances risk and profit potential.",
     icon: ShieldCheckIcon,
   },
   {
     name: "Realtime Dashboard",
-    description: "Pantau semua transaksi dan profit secara realtime.",
+    description: "Monitor all transactions and profits in real-time.",
     icon: ChartBarIcon,
   },
   {
     name: "Secure Encryption",
-    description: "Perlindungan tingkat tinggi untuk data dan API pengguna.",
+    description: "High-level protection for user data and APIs.",
     icon: LockClosedIcon,
   },
   {
     name: "Zero Manual Work",
     description:
-      "Anda hanya mengatur, sistem yang bekerja sepenuhnya otomatis.",
+      "You just set it up, the system works completely automatically.",
     icon: CogIcon,
   },
 ];

@@ -4,17 +4,17 @@ import { MagnifyingGlassIcon, BoltIcon, BanknotesIcon } from '@heroicons/react/2
 const steps = [
   {
     name: 'Step 1 — Market Scanning',
-    description: 'Sistem memindai puluhan pasar dan bursa secara otomatis untuk menemukan perbedaan harga.',
+    description: 'The system automatically scans dozens of markets and exchanges to find price differences.',
     icon: MagnifyingGlassIcon,
   },
   {
     name: 'Step 2 — Smart Execution',
-    description: 'Algoritma mengeksekusi transaksi arbitrage dengan kecepatan tinggi dan risiko terkendali.',
+    description: 'The algorithm executes arbitrage transactions with high speed and controlled risk.',
     icon: BoltIcon,
   },
   {
     name: 'Step 3 — Profit Automation',
-    description: 'Profit dicatat secara otomatis, transparan, dan dapat dipantau dari dashboard kapan saja.',
+    description: 'Profits are recorded automatically, transparently, and can be monitored from the dashboard at any time.',
     icon: BanknotesIcon,
   },
 ];

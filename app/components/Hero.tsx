@@ -21,15 +21,14 @@ const Hero = () => {
           Trade Smarter with Automated Arbitrage Intelligence
         </h1>
         <p className="text-lg md:text-xl text-gray-300 mb-8">
-          Sistem perdagangan otomatis yang menganalisis pasar, mengeksekusi
-          peluang arbitrage, dan memaksimalkan profit — tanpa intervensi manual.
+          An automated trading system that analyzes the market, executes arbitrage opportunities, and maximizes profit — without manual intervention.
         </p>
         <div className="flex justify-center space-x-4">
           <a
             href="#how-it-works"
             className="inline-block bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-8 rounded-lg text-lg transition-colors duration-300"
           >
-            Lihat Cara Kerjanya
+            See How It Works
           </a>
         </div>
       </div>
