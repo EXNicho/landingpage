@@ -1,7 +1,28 @@
 import React from 'react';
 import { ShieldCheckIcon, LockClosedIcon, FingerPrintIcon } from '@heroicons/react/24/outline';
 
-const securityFeatures = [
+interface SecurityFeature {
+  name: string;
+  description: string;
+  icon: React.ElementType;
+}
+
+const securityFeatures: SecurityFeature[] = [
+  {
+    name: 'Perlindungan Lanjutan',
+    description: 'Arsitektur keamanan kami yang canggih memastikan data dan aset Anda selalu terlindungi dari ancaman.',
+    icon: ShieldCheckIcon,
+  },
+  {
+    name: 'Enkripsi End-to-End',
+    description: 'Semua komunikasi dan data dienkripsi secara menyeluruh, menjaga privasi dan kerahasiaan informasi Anda.',
+    icon: LockClosedIcon,
+  },
+  {
+    name: 'Otentikasi Biometrik',
+    description: 'Akses akun Anda dengan aman menggunakan sidik jari atau pemindaian wajah untuk lapisan keamanan ekstra.',
+    icon: FingerPrintIcon,
+  },
 ];
 
 const Security = () => {
