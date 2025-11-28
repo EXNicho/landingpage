@@ -21,7 +21,7 @@ const steps = [
 
 const HowItWorks = () => {
   return (
-    <section id="how-it-works" className="py-24">
+    <section id="how-it-works" className="pt-0 pb-12" data-aos="fade-up">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-extrabold text-white">How It Works</h2>
@@ -30,8 +30,13 @@ const HowItWorks = () => {
           </p>
         </div>
         <div className="grid md:grid-cols-3 gap-8">
-          {steps.map((step) => (
-            <div key={step.name} className="p-8 rounded-2xl glassmorphism text-center">
+          {steps.map((step, index) => (
+            <div
+              key={step.name}
+              className="p-8 rounded-2xl glassmorphism text-center"
+              data-aos="fade-up"
+              data-aos-delay={index * 100}
+            >
               <div className="flex items-center justify-center h-16 w-16 rounded-full bg-cyan-900/50 mx-auto mb-6">
                 <step.icon className="h-8 w-8 text-cyan-400" />
               </div>

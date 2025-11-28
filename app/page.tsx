@@ -4,6 +4,7 @@ import Features from './components/Features';
 import DashboardPreview from './components/DashboardPreview';
 import Security from './components/Security';
 import HowItWorks from './components/HowItWorks';
+import DemoVideo from './components/DemoVideo';
 import Testimonials from './components/Testimonials';
 import Footer from './components/Footer';
 
@@ -16,6 +17,7 @@ export default function Home() {
       <DashboardPreview />
       <Security />
       <HowItWorks />
+      <DemoVideo />
       <Testimonials />
       <Footer />
     </main>

@@ -6,7 +6,11 @@ const securityFeatures = [
 
 const Security = () => {
   return (
-    <section id="security" className="py-24 bg-gray-900/20">
+    <section
+      id="security"
+      className="pt-24 pb-0 bg-gray-900/20"
+      data-aos="fade-up"
+    >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
 
         <div className="grid md:grid-cols-3 gap-8">

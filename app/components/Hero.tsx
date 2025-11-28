@@ -2,7 +2,10 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <section className="relative pt-48 pb-32 flex items-center justify-center text-center">
+    <section
+      className="relative pt-48 pb-32 flex items-center justify-center text-center"
+      data-aos="fade-up"
+    >
       <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50 z-0"></div>
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
         <div className="w-[800px] h-[800px] bg-gradient-to-tr from-blue-900 via-transparent to-transparent rounded-full animate-spin-slow" />

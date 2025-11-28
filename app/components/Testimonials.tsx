@@ -30,7 +30,11 @@ const Testimonials = () => {
   }, []);
 
   return (
-    <section id="testimonials" className="relative w-full h-screen flex flex-col items-center justify-center text-center overflow-hidden bg-black">
+    <section
+      id="testimonials"
+      className="relative w-full h-screen flex flex-col items-center justify-center text-center overflow-hidden bg-black"
+      data-aos="fade-up"
+    >
       <div className="absolute top-0 left-0 w-full h-full">
         <div className="absolute w-full h-full bg-gradient-to-b from-blue-900/30 to-transparent animate-pulse" />
       </div>
