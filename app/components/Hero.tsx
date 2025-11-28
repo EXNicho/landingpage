@@ -14,7 +14,7 @@ const Hero = () => {
       <div className="relative z-10 w-full px-4 sm:px-6 lg:px-8">
         <div className="mb-8">
           <span className="text-cyan-400 font-semibold">
-            Realtime Execution · Smart Risk Control · Multi-Exchange Scanning
+            Realtime Execution · Smart Risk Control · Real-Time Scanning
           </span>
         </div>
         <h1 className="text-5xl md:text-7xl font-extrabold text-white leading-tight mb-4">
