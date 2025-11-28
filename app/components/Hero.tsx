@@ -3,7 +3,7 @@ import React from "react";
 const Hero = () => {
   return (
     <section
-      className="relative pt-48 pb-32 flex items-center justify-center text-center"
+      className="relative h-screen flex items-center justify-center text-center"
       data-aos="fade-up"
     >
       <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50 z-0"></div>
@@ -11,7 +11,7 @@ const Hero = () => {
         <div className="w-[800px] h-[800px] bg-gradient-to-tr from-blue-900 via-transparent to-transparent rounded-full animate-spin-slow" />
       </div>
 
-      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative z-10 w-full px-4 sm:px-6 lg:px-8">
         <div className="mb-8">
           <span className="text-cyan-400 font-semibold">
             Realtime Execution · Smart Risk Control · Multi-Exchange Scanning
@@ -20,7 +20,7 @@ const Hero = () => {
         <h1 className="text-5xl md:text-7xl font-extrabold text-white leading-tight mb-4">
           Trade Smarter with Automated Arbitrage Intelligence
         </h1>
-        <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-8">
+        <p className="text-lg md:text-xl text-gray-300 mb-8">
           Sistem perdagangan otomatis yang menganalisis pasar, mengeksekusi
           peluang arbitrage, dan memaksimalkan profit — tanpa intervensi manual.
         </p>
