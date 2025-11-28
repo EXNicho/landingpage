@@ -1,6 +1,12 @@
 import type { Metadata } from "next";
+import { Poppins } from "next/font/google";
 import { AOSInit } from "./components/AOSInit";
 import "./globals.css";
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "600", "700", "800"],
+});
 
 export const metadata: Metadata = {
   title: "Quantum Arbitrage",
@@ -15,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <AOSInit />
-      <body className="antialiased">{children}</body>
+      <body className={`${poppins.className} antialiased`}>{children}</body>
     </html>
   );
 }
